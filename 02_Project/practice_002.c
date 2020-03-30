@@ -32,12 +32,18 @@ int main() {
 //	printf("%s\n",str2);
 
 	//指针变量所占用的大小,取决于编译器和系统架构
-	char *a = "hello";
-	printf("%d\n",sizeof(a));
-	printf("%d\n",strlen(a));
-	double *b;
-	printf("%d\n",sizeof(b)); 
-	int *c;
-	printf("%p---%p\n",c,(c+1));
+//	char *a = "hello";
+//	printf("%d\n",sizeof(a));
+//	printf("%d\n",strlen(a));
+//	double *b;
+//	printf("%d\n",sizeof(b)); 
+//	int *c;
+//	printf("%p---%p\n",c,(c+1));
+
+	//逗号表达式
+	int a=1,b=2,c=3,x,y;
+	y=(x=a+b),(b+c);
+	printf("x=%d,y=%d\n",x,y); 
+	printf("sizeof(int)=%d\n",sizeof(int));
 	return 0;
 }

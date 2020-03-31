@@ -45,5 +45,7 @@ int main() {
 	y=(x=a+b),(b+c);
 	printf("x=%d,y=%d\n",x,y); 
 	printf("sizeof(int)=%d\n",sizeof(int));
+	float z=3e-5;
+	printf("%lf\n",z); 
 	return 0;
 }

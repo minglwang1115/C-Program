@@ -41,11 +41,15 @@ int main() {
 //	printf("%p---%p\n",c,(c+1));
 
 	//逗号表达式
-	int a=1,b=2,c=3,x,y;
-	y=(x=a+b),(b+c);
-	printf("x=%d,y=%d\n",x,y); 
-	printf("sizeof(int)=%d\n",sizeof(int));
-	float z=3e-5;
-	printf("%lf\n",z); 
+//	int a=1,b=2,c=3,x,y;
+//	y=(x=a+b),(b+c);
+//	printf("x=%d,y=%d\n",x,y); 
+//	printf("sizeof(int)=%d\n",sizeof(int));
+//	float z=3e-5;
+//	printf("%lf\n",z);
+
+	//数组
+//	int n = 4;
+//	int a[n] = {1,2,3};//[Error] 数组大小不能用变量 
 	return 0;
 }

@@ -1,22 +1,22 @@
 #include <stdio.h>
 
-int main() {
-//	int i;
-//	ll: for(i=1; i<5; i++) {
-//		if(i==2) {
-//			printf("%d\n",i);
-//			goto ll;//死循环 
-//		}
-//	}
-
-
-	char str1[10];
-	char str2[10];
-	scanf("%s",str1);//输入11 22 ，读一个连续的字符串 
-	printf("%s\n",str1);// 输出11 
-	gets(str2);//输入11 22 
-	printf("%s\n",str2);//输出11 22，读一行字符串 
-} 
+//int main() {
+////	int i;
+////	ll: for(i=1; i<5; i++) {
+////		if(i==2) {
+////			printf("%d\n",i);
+////			goto ll;//死循环 
+////		}
+////	}
+//
+//
+//	char str1[10];
+//	char str2[10];
+//	scanf("%s",str1);//输入11 22 ，读一个连续的字符串 
+//	printf("%s\n",str1);// 输出11 
+//	gets(str2);//输入11 22 
+//	printf("%s\n",str2);//输出11 22，读一行字符串 
+//} 
 
 //读取两个栅格文件，并相加 
 //int main() {
@@ -36,3 +36,16 @@ int main() {
 //	fclose(p2);
 //	fclose(p3);
 //} 
+
+#define B(a) (a*b)
+int c = 4;
+static int d = 4;
+int main() {
+	int a = 1, b = 2;
+	static int e = 4;
+	printf("%d\n", B(a));//2
+	printf("%x\n",&a);
+	printf("%x\n",&c);
+	printf("%x\n",&d);//
+	printf("%x\n",&e);//static与全局变量都是存储在静态区 
+} 

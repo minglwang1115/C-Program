@@ -318,7 +318,7 @@
 // ~a+1 = -a  取反加一正好等于相反数 http://c.biancheng.net/view/290.html
 
 //#include <stdio.h>
-
+//思路:先向右移位15位 
 
 //15.求m行n列的数组中全体负数的个数
 //#include <stdio.h>
@@ -335,24 +335,46 @@
 //} 
  
 //16.返回一个数组中出现次数最多的数及其出现次数
+//#include <stdio.h>
+//
+//int main() {
+//	int array[10] = {1,2,3,4,5,6,7,1,2,2};
+//	int i,j,maxNum=array[0],count=0;
+//	int flag;
+//	for(i=0;i<10;i++) {
+//		flag = 0;//依次对比，类似于排序 
+//		for(j=0;j<10;j++) {
+//			if(array[i]==array[j]) {
+//				flag++;
+//			}
+//		}
+//		if(flag>count) {
+//			count = flag;
+//			maxNum = array[i];
+//		} 
+//	}
+//	printf("出现最多的是%d,共%d次\n",maxNum,count);
+//	return 0;
+//}
+
+//18.编写递归函数，将输入的以？结束的字符串按与输入相反的顺序输出
+//#include <stdio.h>
+//
+//void pline() {
+//	char ch;
+//	if((ch=getchar())!='?') {
+//		pline();	
+//	}
+//	putchar(ch);
+//} 
+//main() {
+//	pline();
+//}
+
+//科学计数法
 #include <stdio.h>
 
 int main() {
-	int array[20] = {1,2,3,4,5,6,7,1,2,3,1,2,3};
-	int res[2][20];
-	int i,j,maxNum=array[0],count=0;
-	int flag;
-	for(i=0;i<20;i++) {
-		flag = 0;
-		for(j=0;j<20;j++) {
-			if(array[i]==res[0][j]) {
-				flag = 1;
-				break;
-			}
-		}
-		if(flag) {//出现过 
-			
-		}
-	}
-	return 0;
-}
+	int a = .1e8;
+	printf("1 2\b3");//只是移动光标位置 
+} 

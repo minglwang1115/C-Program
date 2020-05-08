@@ -5,7 +5,7 @@ int main()  {
 	int a = 12;
 	int b = 12;
 	float c  = 10.3743; 
-//	printf("%d,%d\n", --a+b, ++b);//测试printf执行顺序
+	printf("%d,%d\n", --a+b, ++b);//测试printf执行顺序
 //	printf("%d\n",strlen("\111")); //1,测试strlen ,当字符串中带有转义字符时，如果符合转义，则按一个字符进行计算，如\n  \ddd, \xdd都是一个字符 
 //	printf("%d\n",strlen("\99"));//\99对应8进制，因此是\9  9两个字符 
 //	printf("%d\n",strlen("\77"));//1 

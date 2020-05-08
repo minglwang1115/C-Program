@@ -6,7 +6,7 @@ main(int argc,char *argv[]) {
 	char ch;
 	if(argc==1) {
 		printf("have not enter file name strike any key exit");
-		getch();
+		getch();//getch()函数不将读入的字符回显在显示屏幕上,当用户按下某个字符时,函数自动读取,无需按回车
 		exit(0);
 	}
 	if((fp1=fopen(argv[1],"rt"))==NULL) {
